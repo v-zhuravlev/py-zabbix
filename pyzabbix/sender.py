@@ -219,7 +219,7 @@ class ZabbixSender(object):
 
         logger.debug("Used config: %s", config_file)
 
-        #  This is workaround for config wile without sections
+        #  This is workaround for config file without sections
         with open(config_file, 'r') as f:
             config_file_data = "[root]\n" + f.read()
 
